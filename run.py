@@ -2,13 +2,14 @@ import os
 import platform
 import time
 os.system("pip install requests")
+os.system("pip install aiohttp")
 fuck = platform.architecture()[0]
 if fuck == '64bit':
     os.system('git pull')
     os.system('clear')
     print('[•] YOUR DEVICE IS 64 BIT')
     time.sleep(2)
-    from TORNADO import TORNADO
+    from tufan import tufan
     TORNADO()
 if fuck == '32bit':
     os.system('git pull')
